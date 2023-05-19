@@ -19,5 +19,14 @@ public class HelloController {
 		request.setAttribute("ATTR1", request.getParameter("t1"));
 		return "hello";
 	}
+	
+	@RequestMapping(method = RequestMethod.POST, path = "/viewDetails")
+	public String inputDetails(HttpServletRequest request) {
+		request.setAttribute("attr1", request.getParameter("firstName"));
+		request.setAttribute("attr2", request.getParameter("lastName"));
+		request.setAttribute("attr3", request.getParameter("email"));
+		return "inputDetails";
+	}
+	
 
 }
