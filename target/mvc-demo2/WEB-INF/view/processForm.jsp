@@ -11,6 +11,8 @@
 
 <h2>showing student details...</h2><hr><br/>
 First Name: ${ss.firstName}<br/>
-Last Name: ${ss.lastName }
+Last Name: ${ss.lastName }<br/>
+Country:   ${ss.country}<br/>
+Favorite Language:  ${ss.favoriteLanguage}
 </body>
 </html>
